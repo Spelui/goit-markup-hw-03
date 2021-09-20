@@ -31,14 +31,12 @@ p{
 
 .section{
   padding: 94px 0;
-  outline: 2px solid tomato;
 }
 
 .container{
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 2px solid tomato;
 }
 
 /* header */
@@ -339,12 +337,18 @@ p{
 .filter-list{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .filter-item{
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+  border-bottom: 1px solid #EEEEEE;
+  padding-bottom: 20px;
+
   background: var(--white);
-  border: 1px solid #EEEEEE;
 }
 
 .filter-link{
@@ -361,4 +365,9 @@ p{
   font-size: 16px;
   line-height: 1.87;
   color: var(--text-color);
+}
+
+.filter-title,
+.filter-text{
+  margin-left: 24px;
 }
